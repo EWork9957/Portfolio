@@ -1,0 +1,536 @@
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    overflow-x: hidden;
+    margin-left: -2px;
+    margin-bottom: -5px;
+}
+/*NAV BAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    margin-left: -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color:#333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+li{
+    float: left;
+}
+#navSpacer{
+    color: #333;
+    cursor:default
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active){
+    background-color: #111;
+}
+/*NAME~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.Name{
+    background-color: rgb(52,152,219);
+    width: 98.5%;
+    height: 600px;
+    margin-top: 56px;
+    margin-left: 10px;
+
+    text-align: center;
+    padding-top: 250px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+}
+/*Selfie~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.nameSqFirst{
+    background-color: rgb(77,151,201);
+    height: 500px;
+    width: 500px;
+    vertical-align:middle;
+    margin-left: 35%;
+    padding-top: 5px;
+    border-radius: 10px;
+    z-index: -2;
+    margin-top: -60px;
+}
+.nameSqLast{
+    margin-top: -400px;
+    margin-left: 40px;
+}
+.selfie{
+    margin-left: 25px;
+    margin-top: -20px;
+}
+img{
+    border-radius: 300px;
+    width: 175px;
+    height: 175px;
+    border: white solid 7px;
+    transition: width 2s, height 2s, border 2s, border-radius 0.5s, transform 2s;
+}
+.selfie:hover img{
+    width: 480px;
+    height: 480px;
+    border-radius: 50px;
+    border: solid rgb(77,151,201) 10px;
+    transform: translate(13px, -284px);
+}
+/*About~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.titleAbout{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+    text-decoration: underline rgb(52,152,219);
+    text-align: center;
+    z-index: 20;
+    
+}
+.infoAbout{
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: -10px;
+    margin-left: 30px;
+    margin-right: 60px;
+}
+/*Experience~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.titleExperience{
+    background-color: rgb(242,242,245);
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline rgb(52,152,219);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: -50px;
+    border-top: solid rgb(220,217,217) 1px;
+}
+.infoExperience{
+    background-color: rgb(242,242,245);
+    margin-top: -15px;
+    padding-top: 5px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: solid rgb(220,217,217) 1px;
+    
+}
+.Employer, .Position{
+    font-size: 20px;
+    font-weight: bold;
+}
+.posInfo{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    text-align: left;
+}
+.pNumber{
+    color: rgb(52,152,219);
+    display: inline;
+}
+/*EDUCATION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.titleEducation{
+    background-color: rgb(255, 255, 255);
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline rgb(52,152,219);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.infoEducation{
+    background-color: rgb(255, 255, 255);
+    margin-top: -15px;
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.eduBox{
+    border: solid rgb(220,217,217) 1px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+.School{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.Year{
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    margin-top: -40px;
+}
+.Class{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+/*PROJECTS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.titleProjects{
+    background-color: rgb(242,242,245);
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline rgb(52,152,219);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: solid rgb(220,217,217) 1px;
+}
+.titleProjects2{
+    background-color: rgb(242,242,245);
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -85px;
+    margin-bottom: -40px;
+}
+.infoProjects{
+    background-color: rgb(242,242,245);
+    padding-top: 5px;
+    text-align: center;
+    border-bottom: solid rgb(220,217,217) 1px; 
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    position:relative;
+}
+.a1, .a2, .a3, .a4, .a5, .a6, .a7, .a8, .a9, .a10, .a11, .a12, .a13, .a14, .a15, .a16, .a17, .a18, .a19, .a20, .a21, .a22, .a23, .a24{
+    border: solid rgb(27, 159, 177) 3px;
+    background-color: rgb(161, 161, 161);
+    height: 250px;
+    width: 250px;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    transition: width 1.5s, height 1.5s;
+    margin-bottom: 20px;
+    margin-left: -200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.a1, .a5, .a9, .a13, .a17, .a21{
+    margin-left: 215px;
+}
+.a21{
+    margin-bottom: 35px;
+}
+.a1:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a2:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a3:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a4:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a5:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a6:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a7:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a8:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a9:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a10:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a11:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a12:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a13:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a14:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a15:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a16:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a17:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a18:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a19:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a20:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a21:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a22:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a23:hover{
+    width: 300px;
+    height: 300px;  
+}
+.a24:hover{
+    width: 300px;
+    height: 300px;  
+}
+/*SKILLS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.titleSkills{
+    background-color: rgb(255, 255, 255);
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline rgb(52,152,219);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: -40px;
+}
+.infoSkills{
+    background-color: rgb(255, 255, 255);
+    margin-top: -15px;
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.infoSkills p{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(228,228,234);
+    width: fit-content;
+    height: fit-content;
+    font-weight: bold;
+    padding: 5px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+}
+.skillsAround{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 20%;
+}
+/*CONTACT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.titleContact{
+    background-color: rgb(242,242,245);
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline rgb(52,152,219);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: solid rgb(220,217,217) 1px;
+    margin-top: 160px;
+    margin-bottom: -50px;
+}
+.infoContact{
+    background-color: rgb(242,242,245);
+}
+.facebookLogo, .instagramLogo, .twitterLogo, .indeedLogo, .githubLogo{
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+.basicContact{
+    margin-left: 650px;
+}
+.socialsContact{
+    margin-left: 690px;
+}
+.Twitter{
+    margin-top: -29px;
+    margin-left: 30px;
+}
+.Instagram{
+    margin-top: -29px;
+    margin-left: 60px;
+}
+.Github{
+    margin-top: -29px;
+    margin-left: 90px;
+}
+.Indeed{
+    margin-top: -29px;
+    margin-left: 120px;
+}
+
+/*FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.Bottom{
+    background-color: #333;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    border-bottom: #333 solid 220px;
+}
+.botTitle{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+.botInformation{
+    margin-left: 450px;
+    font-family: 'Open Sans', sans-serif;
+}
+.botAccount{
+    margin-left: -240px;
+    font-family: 'Open Sans', sans-serif;
+}
+.botLetter{
+    margin-left: -350px;
+    font-family: 'Open Sans', sans-serif;
+}
+.eFormBox{
+    color: blue;
+    width: 330px;
+    height: 40px;
+}
+.eFormButton{
+    width: 145px;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+.botListAccount{
+    color: white;
+    text-decoration: none;
+}
+    .botListAccount a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.658);
+    }
+#botLogo{
+    position: absolute;
+    left: 70px;
+    margin-top: 0px;
+}
+#botLogoTitle{
+    position: absolute;
+    left: 280px;
+    font-size: 50px;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+}
+#botLogoTitle2{
+    position: absolute;
+    left: 205px;
+    font-size: 35px;
+    margin-top: 20px;
+    font-family: 'Smooch Sans', sans-serif;
+}
+#botLogoTitle3{
+    position: absolute;
+    left: 80px;
+    font-size: 18px;
+    margin-top: 170px;
+    color: rgb(225, 225, 225);
+}
+.botInformation{
+    position: absolute;
+    left: 120px;
+}
+.botAccount{
+    position: absolute;
+    left: 1020px;
+}
+.botLetter{
+    position: absolute;
+    left: 1350px;
+}
+/*Logo Links*/
+.botFacebook{
+    position: absolute;
+    margin-top: 260px;
+    left: 83px;
+}
+.botTwitter{
+    position: absolute;
+    margin-top: 260px;
+    left: 123px;
+}
+.botInstagram{
+    position: absolute;
+    margin-top: 260px;
+    left: 163px;
+}
+.botGithub{
+    position: absolute;
+    margin-top: 260px;
+    left: 203px;
+}
+.botIndeed{
+    position: absolute;
+    margin-top: 260px;
+    left: 243px;
+}
+.footerSocials{
+    margin-top: -75px;
+    position: absolute;
+    left: 917px;
+}
+#act1{
+    color: yellow;
+}
